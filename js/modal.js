@@ -75,16 +75,3 @@ window.addEventListener("click", (event) => {
     }
 
 });
-openModal({
-
-    poster_path:"/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
-
-    title:"Spider-Man",
-
-    vote_average:8.5,
-
-    release_date:"2021-12-17",
-
-    overview:"Spider-Man faces new challenges in the multiverse."
-
-});
