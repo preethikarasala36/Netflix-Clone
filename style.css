@@ -1,0 +1,684 @@
+/* ===========================
+   NETFLIX CLONE STYLE.CSS
+=========================== */
+
+:root{
+
+    --primary-color:#E50914;
+
+    --background-color:#141414;
+
+    --card-color:#1F1F1F;
+
+    --text-color:#FFFFFF;
+
+    --secondary-text:#B3B3B3;
+
+    --button-hover:#FF2E3A;
+
+}
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+body{
+
+    background:var(--background-color);
+
+    color:var(--text-color);
+
+}
+
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    min-height:100vh;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,0.7),
+
+    rgba(0,0,0,0.8)
+
+    ),
+
+    url("images/background.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:linear-gradient(
+        90deg,
+        #0F172A,
+        #1E293B
+    );
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:
+    0 4px 15px
+    rgba(0,0,0,0.5);
+
+}
+
+
+.logo{
+
+    width:160px;
+
+    cursor:pointer;
+
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+
+.nav-links li a{
+
+    text-decoration:none;
+
+    color:#FFFFFF;
+
+    font-size:18px;
+
+    font-weight:500;
+
+    transition:0.3s;
+
+}
+
+
+.nav-links li a:hover{
+
+    color:#38BDF8;
+
+}
+
+
+#search{
+
+    width:250px;
+
+    padding:12px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:30px;
+
+    background:#334155;
+
+    color:white;
+
+    border:2px solid transparent;
+
+    transition:0.3s;
+
+}
+
+
+#search::placeholder{
+
+    color:#CBD5E1;
+
+}
+
+
+#search:focus{
+
+    border:2px solid #38BDF8;
+
+}
+
+
+/* ===========================
+   SEARCH BAR
+=========================== */
+
+#search{
+
+    width:280px;
+
+    padding:14px 20px;
+
+    border-radius:30px;
+
+    border:2px solid #475569;
+
+    outline:none;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    transition:all 0.4s ease;
+
+    box-shadow:
+    0 4px 10px
+    rgba(0,0,0,0.3);
+
+}
+
+
+
+#search::placeholder{
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+}
+
+
+
+#search:hover{
+
+    border:2px solid #38BDF8;
+
+}
+
+
+
+#search:focus{
+
+    width:320px;
+
+    border:2px solid #38BDF8;
+
+    box-shadow:
+
+    0 0 15px
+
+    rgba(56,189,248,0.7);
+
+}
+
+
+
+
+
+
+
+/* ===========================
+   BANNER
+=========================== */
+
+.banner-content{
+
+    width:50%;
+
+    margin-left:70px;
+
+    margin-top:150px;
+
+}
+
+
+.banner-content h1{
+
+    font-size:65px;
+
+    margin-bottom:20px;
+
+}
+
+
+.banner-content p{
+
+    font-size:24px;
+
+    color:var(--secondary-text);
+
+    margin-bottom:30px;
+
+}
+
+
+
+.banner-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+
+/* Watch Button */
+
+.play-btn{
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:var(--primary-color);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.play-btn:hover{
+
+    background:var(--button-hover);
+
+}
+
+
+
+/* Info Button */
+
+.info-btn{
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#6D6D6E;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.info-btn:hover{
+
+    background:#8A8A8A;
+
+}
+
+
+
+
+/* ===========================
+   MOVIE SECTIONS
+=========================== */
+
+.movies-section{
+
+    padding:50px 60px;
+
+}
+
+
+
+.movies-section h2{
+
+    font-size:32px;
+
+    color:var(--primary-color);
+
+    border-left:5px solid var(--primary-color);
+
+    padding-left:12px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+
+/* ===========================
+   MOVIE CARDS
+=========================== */
+
+.movie-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+
+
+.movie{
+
+    width:220px;
+
+    background:var(--card-color);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+.movie:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 0 20px
+
+    rgba(229,9,20,0.6);
+
+}
+
+
+
+.movie img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+}
+
+
+
+.movie h3{
+
+    padding:10px;
+
+    font-size:18px;
+
+}
+
+
+
+.movie p{
+
+    padding:0 10px 15px;
+
+    color:var(--secondary-text);
+
+}
+
+
+
+
+
+/* ===========================
+   MODAL
+=========================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.9);
+
+    z-index:100;
+
+}
+
+
+
+.modal-content{
+
+    background:var(--card-color);
+
+    width:70%;
+
+    max-width:800px;
+
+    margin:80px auto;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    border:2px solid var(--primary-color);
+
+    position:relative;
+
+}
+
+
+
+.close{
+
+    position:absolute;
+
+    top:15px;
+
+    right:25px;
+
+    font-size:35px;
+
+    color:var(--primary-color);
+
+    cursor:pointer;
+
+}
+
+
+
+.close:hover{
+
+    color:white;
+
+}
+
+
+
+#movieDetails img{
+
+    width:220px;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:var(--secondary-text);
+
+    border-top:1px solid #333;
+
+}
+
+
+
+.footer p{
+
+    margin-top:10px;
+
+}
+
+
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:768px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+
+.nav-links{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+#search{
+
+    width:100%;
+
+}
+
+
+
+.banner-content{
+
+    width:90%;
+
+    margin:100px auto;
+
+    text-align:center;
+
+}
+
+
+
+.banner-content h1{
+
+    font-size:40px;
+
+}
+
+
+
+.banner-content p{
+
+    font-size:18px;
+
+}
+
+
+
+.banner-buttons{
+
+    justify-content:center;
+
+}
+
+
+
+.movie-container{
+
+    justify-content:center;
+
+}
+
+
+
+.modal-content{
+
+    width:90%;
+
+}
+
+
+}

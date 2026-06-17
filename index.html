@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header">
+
+    <nav class="navbar">
+
+      <img src="images/logo.png"
+        alt="Netflix Logo"
+        class="logo">
+
+      <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">TV Shows</a></li>
+
+        <li><a href="#">Movies</a></li>
+
+        <li><a href="#">Trending</a></li>
+
+        <li><a href="#">My List</a></li>
+
+      </ul>
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Search Movies...">
+
+    </nav>
+
+
+
+    <!-- Banner -->
+
+    <div class="banner-content">
+
+      <h1>
+
+        Unlimited Movies,<br>
+
+        TV Shows and More
+
+      </h1>
+
+      <p>
+
+        Watch anywhere.
+
+        Cancel anytime.
+
+      </p>
+
+
+      <div class="banner-buttons">
+
+        <button class="play-btn">
+
+          ▶ Watch Now
+
+        </button>
+
+
+        <button class="info-btn">
+
+          ℹ More Info
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+
+  <!-- Trending Movies -->
+
+  <section class="movies-section">
+
+    <h2>
+
+      🔥 Trending Now
+
+    </h2>
+
+
+    <div
+      id="trending"
+      class="movie-container">
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Popular Movies -->
+
+  <section class="movies-section">
+
+    <h2>
+
+      🎬 Popular Movies
+
+    </h2>
+
+
+    <div
+      id="movies"
+      class="movie-container">
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Movie Details Modal -->
+
+  <div
+    id="movieModal"
+    class="modal">
+
+    <div class="modal-content">
+
+
+      <span
+        id="closeBtn"
+        class="close">
+
+        &times;
+
+      </span>
+
+
+
+      <div id="movieDetails">
+
+        <!-- Dynamic Movie Details -->
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <p>
+
+      Questions? Contact us.
+
+    </p>
+
+
+    <p>
+
+      © 2026 Netflix Clone
+
+    </p>
+
+
+    <p>
+
+      Developed by Team Netflix Clone
+
+    </p>
+
+  </footer>
+
+
+
+
+  <!-- JS Files -->
+
+  <script src="js/movies.js"></script>
+
+  <script src="js/search.js"></script>
+
+  <script src="js/trending.js"></script>
+
+  <script src="js/modal.js"></script>
+
+</body>
+
+</html>
