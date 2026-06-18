@@ -69,5 +69,4 @@ movies.forEach(movie => {
 
     moviesContainer.appendChild(movieCard);
 
-});//movie cards and API integrationgu
->>>>>>> 9c5a45562143b89fb4ed9d6d3f3989f4e6e7f051
+});
