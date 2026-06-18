@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-//
-=======
 // movies.js
 // Popular Movies Data
 
