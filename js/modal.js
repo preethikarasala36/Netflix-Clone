@@ -1,5 +1,3 @@
-// Get modal elements
-
 const modal = document.getElementById("movieModal");
 
 const movieDetails = document.getElementById("movieDetails");
@@ -7,53 +5,32 @@ const movieDetails = document.getElementById("movieDetails");
 const closeBtn = document.getElementById("closeBtn");
 
 
-
-// Open Modal Function
+// Movie details show cheyadaniki function
 
 function openModal(movie) {
 
-    modal.style.display = "block";
-
-
     movieDetails.innerHTML = `
 
-        <img
-        src="https://image.tmdb.org/t/p/w500${movie.poster_path}"
-        alt="${movie.title}">
+        <img src="${movie.Poster}" alt="${movie.Title}">
 
-        <h2>${movie.title}</h2>
+        <h2>${movie.Title}</h2>
 
-        <p>
+        <p><strong>Year:</strong> ${movie.Year}</p>
 
-        <strong>Rating :</strong>
+        <p><strong>IMDb Rating:</strong> ⭐ ${movie.imdbRating}</p>
 
-        ⭐ ${movie.vote_average}
+        <p><strong>Genre:</strong> ${movie.Genre}</p>
 
-        </p>
-
-        <p>
-
-        <strong>Release Date :</strong>
-
-        ${movie.release_date}
-
-        </p>
-
-        <br>
-
-        <p>
-
-        ${movie.overview}
-
-        </p>
+        <p><strong>Plot:</strong> ${movie.Plot}</p>
 
     `;
+
+    modal.style.display = "block";
 
 }
 
 
-
-// Close Modal
+// Close button click
 
 closeBtn.addEventListener("click", () => {
 
@@ -62,13 +39,11 @@ closeBtn.addEventListener("click", () => {
 });
 
 
+// Modal outside click
 
+window.addEventListener("click", (e) => {
 
-// Close when clicking outside modal
-
-window.addEventListener("click", (event) => {
-
-    if (event.target === modal) {
+    if (e.target === modal) {
 
         modal.style.display = "none";
 
