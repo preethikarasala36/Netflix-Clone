@@ -1,68 +1,247 @@
-# 🎬 Netflix Clone
+Netflix Clone 🎬
 
-This is a simple **Netflix UI Clone** built using HTML, CSS, and JavaScript.
+Project Overview
 
----
+Netflix Clone is a responsive movie browsing website developed using HTML, CSS and JavaScript. The project provides a Netflix-like user interface where users can browse movies, search movies and view movie details in a popup modal.
 
-## 📁 Project Structure
+The movie data is fetched dynamically using the OMDb API.
 
-Netflix-Clone  
-│  
-├── images  
-│   ├── logo.png              # Netflix logo image used in navbar  
-│   └── background.jpg       # Background banner image  
-│  
-├── js  
-│   ├── movies.js            # Contains movie data (title, image, details)  
-│   ├── search.js            # Handles search functionality  
-│   ├── trending.js          # Displays trending movies section  
-│   └── modal.js             # Controls popup modal for movie details  
-│  
-├── index.html               # Main homepage structure  
-├── style.css                # Styling for UI design  
-└── README.md                # Project documentation  
 
 ---
 
-## ✨ Features
+Features
 
-- 🎥 Movie listing UI similar to Netflix
-- 🔍 Search movies functionality
-- 🔥 Trending movies section
-- 📌 Modal popup for movie details
-- 🎨 Responsive and clean UI design
+Display Popular Movies
 
----
+Search Movies
 
-## 🛠️ Technologies Used
+Trending Movies Section
 
-- HTML5 → Structure
-- CSS3 → Styling and layout
-- JavaScript → Functionality and interactivity
+Movie Details Modal Popup
 
----
+Responsive User Interface
 
-## 🎯 Project Purpose
+OMDb API Integration
 
-This project is built for **learning front-end development**, especially:
-- DOM manipulation
-- UI design practice
-- JavaScript logic building
+
 
 ---
 
-## 🚀 How to Run Project
+Technologies Used
 
-1. Download or clone repository
-2. Open `index.html` in browser
-3. Explore the Netflix UI clone
+HTML5
+
+CSS3
+
+JavaScript (ES6)
+
+OMDb API
+
+Git
+
+GitHub
+
+
 
 ---
 
-## 👨‍💻 Author
+Project Structure
 
-Built by a B.Tech student for practice and learning purposes.
+Netflix-Clone
+
+├── images
+
+│ ├── logo.png
+
+│ └── background.jpg
+
+├── js
+
+│ ├── movies.js
+
+│ ├── search.js
+
+│ ├── trending.js
+
+│ └── modal.js
+
+├── index.html
+
+├── style.css
+
+└── README.md
+
 
 ---
 
-⭐ If you like this project, give it a star on GitHub!
+How to Run
+
+1. Clone the repository
+
+
+2. Open the project folder in VS Code
+
+
+3. Get an API key from OMDb API
+
+
+4. Add your API key in movies.js
+
+
+
+const API_KEY = "YOUR_API_KEY";
+
+5. Open index.html in your browser
+
+
+
+
+---
+
+API Used
+
+OMDb API is used to fetch movie information dynamically.
+
+Example:
+
+https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movie
+
+
+---
+
+Future Enhancements
+
+Add Movie Categories
+
+Add User Authentication
+
+Add Watchlist Feature
+
+Dark/Light Theme Toggle
+
+Pagination for Movies
+
+
+
+---
+
+Author
+
+Developed by Team Netflix Clone
+
+
+---
+
+License
+
+This project is created for educational purposes only.
+
+writing{variant="document" id="46281"}
+# Netflix Clone 🎬
+
+## Project Overview
+
+Netflix Clone is a responsive movie browsing website developed using HTML, CSS and JavaScript. The project provides a Netflix-like user interface where users can browse movies, search movies and view movie details in a popup modal.
+
+The movie data is fetched dynamically using the OMDb API.
+
+---
+
+## Features
+
+- Display Popular Movies
+- Search Movies
+- Trending Movies Section
+- Movie Details Modal Popup
+- Responsive User Interface
+- OMDb API Integration
+
+---
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- OMDb API
+- Git
+- GitHub
+
+---
+
+## Project Structure
+
+Netflix-Clone
+
+├── images
+
+│ ├── logo.png
+
+│ └── background.jpg
+
+├── js
+
+│ ├── movies.js
+
+│ ├── search.js
+
+│ ├── trending.js
+
+│ └── modal.js
+
+├── index.html
+
+├── style.css
+
+└── README.md
+
+---
+
+## How to Run
+
+1. Clone the repository
+
+2. Open the project folder in VS Code
+
+3. Get an API key from OMDb API
+
+4. Add your API key in `movies.js`
+
+```javascript
+const API_KEY = "YOUR_API_KEY";
+```
+
+5. Open `index.html` in your browser
+
+---
+
+## API Used
+
+OMDb API is used to fetch movie information dynamically.
+
+Example:
+
+https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movie
+
+---
+
+## Future Enhancements
+
+- Add Movie Categories
+- Add User Authentication
+- Add Watchlist Feature
+- Dark/Light Theme Toggle
+- Pagination for Movies
+
+---
+
+## Author
+
+Developed by Team Netflix Clone
+
+---
+
+## License
+
+
+
