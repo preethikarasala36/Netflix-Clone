@@ -2,17 +2,17 @@ const trendingContainer = document.getElementById("trending");
 
 const trendingMovies = [
 
-    "Avengers",
+    "Avatar",
 
-    "Batman",
+    "Oppenheimer",
 
-    "Spider-Man",
+    "Barbie",
 
-    "Joker",
+    "Dune",
 
-    "Interstellar",
+    "Top Gun",
 
-    "Inception"
+    "John Wick"
 
 ];
 
@@ -48,6 +48,12 @@ async function getTrendingMovies() {
 
                 `;
 
+                movieDiv.addEventListener("click", () => {
+
+                    openModal(data);
+
+                });
+
                 trendingContainer.appendChild(movieDiv);
 
             }
@@ -56,7 +62,7 @@ async function getTrendingMovies() {
 
         catch (error) {
 
-            console.log(error);
+            console.log("Error:", error);
 
         }
 
@@ -64,4 +70,4 @@ async function getTrendingMovies() {
 
 }
 
-getTrendingMovies();//Trending movies
+getTrendingMovies();
